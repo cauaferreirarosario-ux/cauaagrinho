@@ -1,0 +1,579 @@
+`html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho • Futuro Verde 🌱</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .title-font {
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(34, 197, 151, 0.85), rgba(22, 101, 52, 0.9)),
+                  url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    }
+
+    .leaf {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-green-50 to-emerald-100">
+
+  <!-- Header -->
+  <header class="bg-green-800 text-white sticky top-0 z-50 shadow-lg">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="text-4xl leaf">🌱</div>
+        <h1 class="title-font text-3xl font-bold tracking-wide">Agrinho</h1>
+      </div>
+      <div class="flex gap-8 text-lg font-medium">
+        <a href="#inicio" class="hover:text-yellow-300 transition">Início</a>
+        <a href="#missao" class="hover:text-yellow-300 transition">Missão</a>
+        <a href="#economia" class="hover:text-yellow-300 transition">Economia Sustentável</a>
+        <a href="#interativo" class="hover:text-yellow-300 transition">Jogue!</a>
+        <a href="#galeria" class="hover:text-yellow-300 transition">Galeria</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Super Criativo -->
+  <section id="inicio" class="hero-bg h-screen flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#ffffff22_0%,transparent_70%)]"></div>
+   
+    <div class="max-w-5xl mx-auto text-center px-6 relative z-10">
+      <div class="inline-flex items-center gap-3 bg-white/20 backdrop-blur-md px-6 py-2 rounded-full mb-6">
+        <span class="text-2xl">🏆</span>
+        <span class="font-bold">Programa Agrinho 2026</span>
+      </div>
+     
+      <h2 class="title-font text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
+        O Campo do Futuro<br>
+        <span class="text-yellow-300">Começa com Você!</span>
+      </h2>
+     
+      <p class="text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
+        Descubra como a <strong>economia sustentável</strong> pode transformar o Brasil e o planeta.
+      </p>
+
+      <div class="flex gap-6 justify-center">
+        <a href="#economia" class="bg-yellow-400 hover:bg-yellow-300 text-green-900 font-bold text-xl px-10 py-5 rounded-2xl transition flex items-center gap-3">
+          <i class="fa-solid fa-arrow-down"></i>
+          Explorar Agora
+        </a>
+        <a href="#interativo" class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white text-white font-bold text-xl px-10 py-5 rounded-2xl transition">
+          Testar seus conhecimentos →
+        </a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-10 left-1/2 animate-bounce">
+      <i class="fa-solid fa-chevron-down text-4xl text-white/70"></i>
+    </div>
+  </section>
+
+  <!-- Missão -->
+  <section id="missao" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="title-font text-5xl font-bold text-green-800 mb-8">O que é o Agrinho?</h2>
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            O Agrinho é o maior programa socioeducativo do agronegócio brasileiro.
+            Todos os anos, mais de <strong>2 milhões de crianças e adolescentes</strong> aprendem sobre agricultura,
+            pecuária, tecnologia e <span class="text-green-600 font-bold">sustentabilidade</span>.
+          </p>
+          <div class="flex items-center gap-4 text-sm bg-green-50 p-4 rounded-2xl">
+            <i class="fa-solid fa-medal text-3xl text-yellow-500"></i>
+            <div>
+              <strong>Concurso Nacional de Desenho e Redação</strong><br>
+              Tema 2026: Economia Sustentável no Campo
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-green-600 to-emerald-600 text-white p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">🌍</div>
+            <h4 class="text-2xl font-bold">Meio Ambiente</h4>
+          </div>
+          <div class="bg-gradient-to-br from-amber-500 to-orange-500 text-white p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">💰</div>
+            <h4 class="text-2xl font-bold">Economia</h4>
+          </div>
+          <div class="bg-gradient-to-br from-blue-500 to-cyan-500 text-white p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">👨‍🌾</div>
+            <h4 class="text-2xl font-bold">Agricultor</h4>
+          </div>
+          <div class="bg-gradient-to-br from-purple-500 to-pink-500 text-white p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">🚜</div>
+            <h4 class="text-2xl font-bold">Tecnologia</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Economia Sustentável -->
+  <section id="economia" class="py-24 bg-gradient-to-b from-green-800 to-emerald-900 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="title-font text-5xl font-bold text-center mb-4">Economia Sustentável</h2>
+      <p class="text-center text-green-200 text-xl mb-16">Produzir mais • Degradar menos • Incluir todos</p>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white/10 backdrop-blur-lg p-10 rounded-3xl card-hover border border-white/20">
+          <div class="text-6xl mb-6">🌱</div>
+          <h3 class="text-2xl font-bold mb-3">Agricultura Regenerativa</h3>
+          <p class="text-green-100">Recupera o solo, aumenta a biodiversidade e captura carbono do ar.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg p-10 rounded-3xl card-hover border border-white/20">
+          <div class="text-6xl mb-6">💧</div>
+          <h3 class="text-2xl font-bold mb-3">Economia Circular</h3>
+          <p class="text-green-100">Reaproveita água, resíduos e energia. Nada se perde, tudo se transforma.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg p-10 rounded-3xl card-hover border border-white/20">
+          <div class="text-6xl mb-6">🤝</div>
+          <h3 class="text-2xl font-bold mb-3">Agroecologia Social</h3>
+          <p class="text-green-100">Gera renda digna para famílias rurais e preserva a cultura do campo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Interativo -->
+  <section id="interativo" class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="title-font text-5xl font-bold text-center mb-10 text-green-800">🧠 Teste seus Conhecimentos!</h2>
+     
+      <div id="quiz" class="bg-green-50 border-2 border-green-200 p-10 rounded-3xl">
+        <p id="pergunta" class="text-2xl font-medium mb-8 text-center min-h-[80px]"></p>
+       
+        <div id="opcoes" class="grid gap-4"></div>
+       
+        <div id="resultado" class="hidden mt-8 text-center text-2xl font-bold"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="py-20 bg-green-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="title-font text-5xl font-bold text-center mb-12">Inspiração no Campo 🌾</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18" class="rounded-2xl shadow-lg hover:scale-105 transition" alt="Plantação">
+        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449" class="rounded-2xl shadow-lg hover:scale-105 transition" alt="Agricultura">
+        <img src="https://images.unsplash.com/photo-1500595046746-3a8e6e2e3b0e" class="rounded-2xl shadow-lg hover:scale-105 transition" alt="Abelhas">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b0b4d2f" class="rounded-2xl shadow-lg hover:scale-105 transition" alt="Solo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-4xl title-font mb-4">🌱 Agrinho 2026</p>
+      <p class="text-xl mb-8">Juntos construindo um agronegócio mais sustentável e consciente</p>
+      <p class="text-green-300">Sistema CNA • SENAR • Programa Agrinho</p>
+    </div>
+  </footer>
+
+  <script>
+    // Quiz Interativo
+    const perguntas = [
+      {
+        q: "O que significa agricultura sustentável?",
+        a: ["Usar o máximo de agrotóxico possível", "Produzir sem esgotar os recursos naturais", "Só plantar soja"],
+        correta: 1
+      },
+      {
+        q: "Qual é uma prática sustentável?",
+        a: ["Queimar a palha após a colheita", "Plantio direto e rotação de culturas", "Desmatar para plantar mais"],
+        correta: 1
+      },
+      {
+        q: "O que podemos fazer em casa para ajudar?",
+        a: ["Deixar a torneira aberta ao escovar os dentes", "Fazer compostagem com restos de comida", "Jogar lixo no rio"],
+        correta: 1
+      }
+    ];
+
+    let atual = 0;
+    let acertos = 0;
+
+    function carregarPergunta() {
+      document.getElementById('resultado').classList.add('hidden');
+      const p = perguntas[atual];
+      document.getElementById('pergunta').innerHTML = `<strong>${atual + 1}.</strong> ${p.q}`;
+     
+      const opcoesDiv = document.getElementById('opcoes');
+      opcoesDiv.innerHTML = '';
+
+      p.a.forEach((resposta, index) => {
+        const btn = document.createElement('button');
+        btn.className = "w-full text-left p-5 bg-white hover:bg-green-100 rounded-2xl transition border border-green-200 text-lg";
+        btn.innerHTML = resposta;
+        btn.onclick = () => verificarResposta(index);
+        opcoesDiv.appendChild(btn);
+      });
+    }
+
+    function verificarResposta(escolha) {
+      const correta = perguntas[atual].correta;
+     
+      if (escolha === correta) acertos++;
+
+      document.getElementById('resultado').classList.remove('hidden');
+      document.getElementById('resultado').innerHTML = `
+        ${escolha === correta ?
+          '<span class="text-green-600">🎉 Parabéns! Resposta certa!</span>' :
+          '<span class="text-red-600">😕 Resposta errada</span>'}
+        <br><br>
+        <button onclick="proxima()" class="mt-4 bg-green-700 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-bold">
+          ${atual < perguntas.length - 1 ? 'Próxima pergunta →' : 'Ver resultado final'}
+        </button>
+      `;
+    }
+
+    function proxima() {
+      atual++;
+      if (atual < perguntas.length) {
+        carregarPergunta();
+      } else {
+        document.getElementById('quiz').innerHTML = `
+          <div class="text-center py-12">
+            <h3 class="text-4xl font-bold text-green-700 mb-6">Fim do Quiz! 🌟</h3>
+            <p class="text-6xl mb-6">${acertos}/${perguntas.length}</p>
+            <p class="text-2xl">${acertos >= 2 ? 'Você é um verdadeiro defensor do futuro sustentável!' : 'Continue aprendendo com o Agrinho!'}</p>
+            <button onclick="location.reload()" class="mt-10 bg-yellow-400 hover:bg-yellow-300 text-green-900 font-bold px-10 py-4 rounded-2xl text-lg">
+              Jogar novamente
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    // Iniciar Quiz
+    window.onload = () => {
+      carregarPergunta();
+    };
+  </script>
+</body>
+</html>
+```
+
+---
+
+
+
+Em ter., 2 de jun. de 2026 às 10:29, CAUA FERREIRA DO ROSARIO <caua.ferreira.rosario@escola.pr.gov.br> escreveu:
+**✅ Aqui está a versão MUITO MAIS ELABORADA e CRIATIVA do projeto!**  
+
+Copie todo o código abaixo e substitua o arquivo `index.html` anterior.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho • Futuro Verde 🌱</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .title-font {
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(34, 197, 151, 0.85), rgba(22, 101, 52, 0.9)),
+                  url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    }
+
+    .leaf {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-green-50 to-emerald-100">
+
+  <!-- Header -->
+  <header class="bg-green-800 text-white sticky top-0 z-50 shadow-lg">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="text-4xl leaf">🌱</div>
+        <h1 class="title-font text-3xl font-bold tracking-wide">Agrinho</h1>
+      </div>
+      <div class="flex gap-8 text-lg font-medium">
+        <a href="#inicio" class="hover:text-yellow-300 transition">Início</a>
+        <a href="#missao" class="hover:text-yellow-300 transition">Missão</a>
+        <a href="#economia" class="hover:text-yellow-300 transition">Economia Sustentável</a>
+        <a href="#interativo" class="hover:text-yellow-300 transition">Jogue!</a>
+        <a href="#galeria" class="hover:text-yellow-300 transition">Galeria</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Super Criativo -->
+  <section id="inicio" class="hero-bg h-screen flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#ffffff22_0%,transparent_70%)]"></div>
+   
+    <div class="max-w-5xl mx-auto text-center px-6 relative z-10">
+      <div class="inline-flex items-center gap-3 bg-white/20 backdrop-blur-md px-6 py-2 rounded-full mb-6">
+        <span class="text-2xl">🏆</span>
+        <span class="font-bold">Programa Agrinho 2026</span>
+      </div>
+     
+      <h2 class="title-font text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
+        O Campo do Futuro<br>
+        <span class="text-yellow-300">Começa com Você!</span>
+      </h2>
+     
+      <p class="text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
+        Descubra como a <strong>economia sustentável</strong> pode transformar o Brasil e o planeta.
+      </p>
+
+      <div class="flex gap-6 justify-center">
+        <a href="#economia" class="bg-yellow-400 hover:bg-yellow-300 text-green-900 font-bold text-xl px-10 py-5 rounded-2xl transition flex items-center gap-3">
+          <i class="fa-solid fa-arrow-down"></i>
+          Explorar Agora
+        </a>
+        <a href="#interativo" class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white text-white font-bold text-xl px-10 py-5 rounded-2xl transition">
+          Testar seus conhecimentos →
+        </a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-10 left-1/2 animate-bounce">
+      <i class="fa-solid fa-chevron-down text-4xl text-white/70"></i>
+    </div>
+  </section>
+
+  <!-- Missão -->
+  <section id="missao" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="title-font text-5xl font-bold text-green-800 mb-8">O que é o Agrinho?</h2>
+          <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            O Agrinho é o maior programa socioeducativo do agronegócio brasileiro.
+            Todos os anos, mais de <strong>2 milhões de crianças e adolescentes</strong> aprendem sobre agricultura,
+            pecuária, tecnologia e <span class="text-green-600 font-bold">sustentabilidade</span>.
+          </p>
+          <div class="flex items-center gap-4 text-sm bg-green-50 p-4 rounded-2xl">
+            <i class="fa-solid fa-medal text-3xl text-yellow-500"></i>
+            <div>
+              <strong>Concurso Nacional de Desenho e Redação</strong><br>
+              Tema 2026: Economia Sustentável no Campo
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-green-600 to-emerald-600 text-white p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">🌍</div>
+            <h4 class="text-2xl font-bold">Meio Ambiente</h4>
+          </div>
+          <div class="bg-gradient-to-br from-amber-500 to-orange-500 text-white p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">💰</div>
+            <h4 class="text-2xl font-bold">Economia</h4>
+          </div>
+          <div class="bg-gradient-to-br from-blue-500 to-cyan-500 text-white p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">👨‍🌾</div>
+            <h4 class="text-2xl font-bold">Agricultor</h4>
+          </div>
+          <div class="bg-gradient-to-br from-purple-500 to-pink-500 text-white p-8 rounded-3xl text-center">
+            <div class="text-5xl mb-4">🚜</div>
+            <h4 class="text-2xl font-bold">Tecnologia</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Economia Sustentável -->
+  <section id="economia" class="py-24 bg-gradient-to-b from-green-800 to-emerald-900 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="title-font text-5xl font-bold text-center mb-4">Economia Sustentável</h2>
+      <p class="text-center text-green-200 text-xl mb-16">Produzir mais • Degradar menos • Incluir todos</p>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white/10 backdrop-blur-lg p-10 rounded-3xl card-hover border border-white/20">
+          <div class="text-6xl mb-6">🌱</div>
+          <h3 class="text-2xl font-bold mb-3">Agricultura Regenerativa</h3>
+          <p class="text-green-100">Recupera o solo, aumenta a biodiversidade e captura carbono do ar.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg p-10 rounded-3xl card-hover border border-white/20">
+          <div class="text-6xl mb-6">💧</div>
+          <h3 class="text-2xl font-bold mb-3">Economia Circular</h3>
+          <p class="text-green-100">Reaproveita água, resíduos e energia. Nada se perde, tudo se transforma.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg p-10 rounded-3xl card-hover border border-white/20">
+          <div class="text-6xl mb-6">🤝</div>
+          <h3 class="text-2xl font-bold mb-3">Agroecologia Social</h3>
+          <p class="text-green-100">Gera renda digna para famílias rurais e preserva a cultura do campo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Interativo -->
+  <section id="interativo" class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="title-font text-5xl font-bold text-center mb-10 text-green-800">🧠 Teste seus Conhecimentos!</h2>
+     
+      <div id="quiz" class="bg-green-50 border-2 border-green-200 p-10 rounded-3xl">
+        <p id="pergunta" class="text-2xl font-medium mb-8 text-center min-h-[80px]"></p>
+       
+        <div id="opcoes" class="grid gap-4"></div>
+       
+        <div id="resultado" class="hidden mt-8 text-center text-2xl font-bold"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="py-20 bg-green-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="title-font text-5xl font-bold text-center mb-12">Inspiração no Campo 🌾</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18" class="rounded-2xl shadow-lg hover:scale-105 transition" alt="Plantação">
+        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449" class="rounded-2xl shadow-lg hover:scale-105 transition" alt="Agricultura">
+        <img src="https://images.unsplash.com/photo-1500595046746-3a8e6e2e3b0e" class="rounded-2xl shadow-lg hover:scale-105 transition" alt="Abelhas">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b0b4d2f" class="rounded-2xl shadow-lg hover:scale-105 transition" alt="Solo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-4xl title-font mb-4">🌱 Agrinho 2026</p>
+      <p class="text-xl mb-8">Juntos construindo um agronegócio mais sustentável e consciente</p>
+      <p class="text-green-300">Sistema CNA • SENAR • Programa Agrinho</p>
+    </div>
+  </footer>
+
+  <script>
+    // Quiz Interativo
+    const perguntas = [
+      {
+        q: "O que significa agricultura sustentável?",
+        a: ["Usar o máximo de agrotóxico possível", "Produzir sem esgotar os recursos naturais", "Só plantar soja"],
+        correta: 1
+      },
+      {
+        q: "Qual é uma prática sustentável?",
+        a: ["Queimar a palha após a colheita", "Plantio direto e rotação de culturas", "Desmatar para plantar mais"],
+        correta: 1
+      },
+      {
+        q: "O que podemos fazer em casa para ajudar?",
+        a: ["Deixar a torneira aberta ao escovar os dentes", "Fazer compostagem com restos de comida", "Jogar lixo no rio"],
+        correta: 1
+      }
+    ];
+
+    let atual = 0;
+    let acertos = 0;
+
+    function carregarPergunta() {
+      document.getElementById('resultado').classList.add('hidden');
+      const p = perguntas[atual];
+      document.getElementById('pergunta').innerHTML = `<strong>${atual + 1}.</strong> ${p.q}`;
+     
+      const opcoesDiv = document.getElementById('opcoes');
+      opcoesDiv.innerHTML = '';
+
+      p.a.forEach((resposta, index) => {
+        const btn = document.createElement('button');
+        btn.className = "w-full text-left p-5 bg-white hover:bg-green-100 rounded-2xl transition border border-green-200 text-lg";
+        btn.innerHTML = resposta;
+        btn.onclick = () => verificarResposta(index);
+        opcoesDiv.appendChild(btn);
+      });
+    }
+
+    function verificarResposta(escolha) {
+      const correta = perguntas[atual].correta;
+     
+      if (escolha === correta) acertos++;
+
+      document.getElementById('resultado').classList.remove('hidden');
+      document.getElementById('resultado').innerHTML = `
+        ${escolha === correta ?
+          '<span class="text-green-600">🎉 Parabéns! Resposta certa!</span>' :
+          '<span class="text-red-600">😕 Resposta errada</span>'}
+        <br><br>
+        <button onclick="proxima()" class="mt-4 bg-green-700 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-bold">
+          ${atual < perguntas.length - 1 ? 'Próxima pergunta →' : 'Ver resultado final'}
+        </button>
+      `;
+    }
+
+    function proxima() {
+      atual++;
+      if (atual < perguntas.length) {
+        carregarPergunta();
+      } else {
+        document.getElementById('quiz').innerHTML = `
+          <div class="text-center py-12">
+            <h3 class="text-4xl font-bold text-green-700 mb-6">Fim do Quiz! 🌟</h3>
+            <p class="text-6xl mb-6">${acertos}/${perguntas.length}</p>
+            <p class="text-2xl">${acertos >= 2 ? 'Você é um verdadeiro defensor do futuro sustentável!' : 'Continue aprendendo com o Agrinho!'}</p>
+            <button onclick="location.reload()" class="mt-10 bg-yellow-400 hover:bg-yellow-300 text-green-900 font-bold px-10 py-4 rounded-2xl text-lg">
+              Jogar novamente
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    // Iniciar Quiz
+    window.onload = () => {
+      carregarPergunta();
+    };
+  </script>
+</body>
+</html>
